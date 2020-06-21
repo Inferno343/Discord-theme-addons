@@ -1,0 +1,120 @@
+/**
+ * @name Friend Grid
+ * @author Tropical#7643   fixes & update by Alex#2237
+ * @description a cool grid style friends list
+*/
+
+.title-30qZAO.container-2ax-kl {  /* Online counter */
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.peopleColumn-29fq28 div[role="list"] {  /* Friends container */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+		/* Friends list */
+.peopleListItem-2nzedh { 
+	position: relative;
+	display: block !important;
+	height: 150px !important;
+	width: 375px;
+	margin: 3% !important;
+	padding: 0 !important;
+	border-radius: 10px;
+	box-shadow: 0 0 12px rgba(0,0,0,0.6);
+	animation: friendGridFade .75s ease;
+	transition: 250ms ease all, 350ms ease background-color;
+	
+}
+.peopleListItem-2nzedh:hover {
+    transform: scale(1.05);
+    background-color: transparent;
+    box-shadow: 0 0 12px rgba(0,0,0,1);}
+}
+
+.discordTag-2_tqUA.nameTag-m8r81H { /* Name & discriminator position*/
+	position: absolute;
+	font-size: 20px;
+	overflow: visible;
+	transition: .15s ease color;
+}
+
+.username-2b1r56.username-31C1TQ { /* user name*/
+	visibility: visible !important;
+	position: absolute;
+	top: 40px;
+	left: 150px;
+	transition: .15s ease color;
+}
+
+.discriminator-22Okc1 {     /* Discriminator #number */
+	visibility: visible !important;
+	position: absolute;
+	top: 60px;
+	left: 150px;
+	color: rgba(255, 255, 255, 0.4);
+	transition: .15s ease color;
+}
+
+.avatar-3W3CeO.wrapper-3t9DeA{    /* Avatar */
+	height: 100px !important;
+	width: 345px !important;
+	margin-left: 15px !important;
+	margin-top: 35px !important;
+
+}
+
+.actions-1SQwjn{     /* action buttons */
+	position: absolute;
+	left: 72%;
+	top: 100px;
+}
+
+.subtext-24R4-w{  /* Status position */
+	position: absolute;
+	width: 100%;
+	color: rgba(255, 255, 255, 1);
+	background: grey;
+	font-weight: 500 !important;
+	font-size: 1px;
+	line-height: 20px;
+	top: 0;
+	left: 0;
+}
+
+.text-3MU_QQ, .customStatusEmoji-1o3-7b{ /* Status emoji + text */
+	position: relative;
+	left: 5%;
+}
+.icon-15YQ1T{    /* Status playing icon */
+	position: absolute;
+	right: 5px;
+}
+.mask-1l8v16.svg-2V3M55 { /* Avatar overflow for status indicator position*/
+	overflow: visible !important;
+}
+.avatar-3W3CeO > .mask-1l8v16 > .pointerEvents-2zdfdO { /* Status indicator position */
+	x: 95px;
+	y: 0px;
+}
+ 
+.avatar-3W3CeO > .mask-1l8v16 > foreignObject{  /* Keep avatars round and remove the status indicator mask*/
+	mask: url();
+	border-radius: 50px;
+}
+.avatar-3W3CeO.wrapper-3t9DeA[aria-label*="Online"] ~ div > .subtext-24R4-w {  /* Topbar based on status*/
+	background: #43B581;
+}
+.avatar-3W3CeO.wrapper-3t9DeA[aria-label*="Idle"] ~ div > .subtext-24R4-w {
+	background: #FF851B;
+}
+.avatar-3W3CeO.wrapper-3t9DeA[aria-label*="Disturb"] ~ div > .subtext-24R4-w {
+	background: #FF4136;
+} 
