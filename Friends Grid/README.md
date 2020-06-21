@@ -5,4 +5,4 @@ Display the friends list in a good looking grid with top bar color changing base
 
 Preview:
 
-<img src="https://raw.githubusercontent.com/InfernoVSCY/Discord-theme-addons/master/Friends%20Grid/Friend%20Grid.png">
+<img src="https://i.imgur.com/Gk50UrQ.png">
