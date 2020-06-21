@@ -1,3 +1,17 @@
+/**
+ * @name Friend Grif
+ * @author NFLD99
+ * @version ersion auto updates
+ * @description Thank you for choosing NFLD Inc!
+ * @source https://github.com/NFLD99/Better-Discord
+ * @website https://nfld99.com/
+ * @patreon https://nfld99.com/patreon
+ * @authorLink https://discordhub.com/profile/483413721876529174
+ * @donate https://nfld99.com/paypal
+ * @authorId 483413721876529174
+ * @invite kWRYPrq
+*/
+
 .title-30qZAO.container-2ax-kl {  /* Online counter */
 	text-align: center;
 	color: white;
@@ -99,6 +113,10 @@
 	y: 0px;
 }
  
+.avatar-3W3CeO > .mask-1l8v16 > foreignObject{  /* Keep avatars round and remove the status indicator mask*/
+	mask: url();
+	border-radius: 50px;
+}
 .avatar-3W3CeO.wrapper-3t9DeA[aria-label*="Online"] ~ div > .subtext-24R4-w {  /* Topbar based on status*/
 	background: #43B581;
 }
